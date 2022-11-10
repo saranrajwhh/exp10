@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-
+scale=1.0" />
+    <title>Home Page</title>
+</head>
+
+<body style="color: blue;">
+    <div style="margin-left: 600px;">
+        <h1>User Registration Form</h1>
+        <form action="/server" method="post">
+            Name<span style="color: red;">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type='text' name="myName" required pattern="[a-z,A-Z]{1,}">
+            <br>
+            <br> password
+            <span style="color: red;">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type='password' name="mypassword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <br>
+            <br> Age
+            <span style="color: red;">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            <input type='number' name="myAge" required min="18" max="30">
+            <br>
+            <br> Mobile Number<span style="color: red;">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type='tel' name="mynumber" required pattern="[0-9]{10}">
+            <br>
+            <br> Email
+            <span style="color: red;">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type='email' name="myemail" required>
+            <br>
+            <br> Gender
+            <span style="color: red;">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type='radio' name="mygender" value="Male" required>Male &nbsp;&nbsp;&nbsp;
+            <input type='radio' name="mygender" value="Female" required>Female
+            <br>
+            <br> State
+            <span style="color: red;">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <select name="mystate" required>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+            </select>
+            <br>
+            <br> Skills
+            <span style="color: red;">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type='checkbox' name="s1" value="Java Script">Java Script
+            <input type='hidden' name='s1' value=''> &nbsp;&nbsp;&nbsp;
+            <input type='checkbox' name="s2" value="Python">Python
+            <input type='hidden' name='s2' value=''>
+            <input type='checkbox' name="s3" value="C++">C++
+            <input type='hidden' name='s3' value=''> &nbsp;&nbsp;&nbsp;
+            <input type='checkbox' name="s4" value="Java">Java
+            <input type='hidden' name='s4' value=''>
+            <br>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <Button>submit</Button>
+    </div>
+</body>
+
+</html>
